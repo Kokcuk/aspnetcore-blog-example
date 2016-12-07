@@ -7,10 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{66F90868-DE6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{85D0619D-5734-40A9-A082-972BCC498713}"
 	ProjectSection(SolutionItems) = preProject
-		.dockerignore = .dockerignore
-		docker-compose.dev.debug.yml = docker-compose.dev.debug.yml
-		docker-compose.dev.release.yml = docker-compose.dev.release.yml
-		docker-compose.yml = docker-compose.yml
 		Dockerfile = Dockerfile
 		global.json = global.json
 	EndProjectSection
