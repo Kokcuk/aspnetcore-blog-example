@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  blogexamplestatic.web:
+    image: user/blogexamplestatic.web${TAG}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80"

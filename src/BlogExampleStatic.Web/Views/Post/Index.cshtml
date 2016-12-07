@@ -1,0 +1,16 @@
+﻿@using System.Globalization
+@using System.Threading.Tasks
+@using BlogExampleStatic.Common.Entities
+@model List<BlogExampleStatic.Common.Entities.PostEntity>
+
+<h3>Posts</h3>
+
+@foreach (PostEntity post in Model)
+{
+    <div style="margin-bottom: 25px">
+        <h4>@post.Title <a asp-action="Edit" asp-controller="Post" asp-route-id="@post.Id" class="btn btn-primary btn-xs pull-right" style="margin-left: 10px;">Edit</a><small class="pull-right">@post.CreateDate.ToString("dd-MMM-yy, hh:mm", CultureInfo.InvariantCulture)</small></h4>
+        <p>@post.Text</p>
+        <small>@post.Author?.Email</small>
+    </div>
+}
+<a asp-action="Edit" asp-controller="Post" class="btn btn-success">Add new</a>
